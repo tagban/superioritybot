@@ -1,0 +1,150 @@
+<navigation:Page xmlns:toolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit" 
+    x:Class="Superiority.Views.Home" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns:GalaSoft_MvvmLight_Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.SL4"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:view="clr-namespace:Superiority.Views"
+    xmlns:glue="clr-namespace:Superiority.Views.SLGlue"
+    d:DesignWidth="640" d:DesignHeight="300" mc:Ignorable="d"
+    DataContext="{Binding Path=MainWindowViewModel, Source={StaticResource ViewModelLocator}}"
+    Style="{StaticResource PageStyle}">
+    
+    <navigation:Page.Resources>
+        <glue:ProductToIconValueConverter x:Key="ProductToIconValueConverter" />
+        <DataTemplate x:Key="AccountTemplate">
+            <Border x:Name="Root" Margin="1" Opacity="0" Width="200" Height="140" Loaded="Root_Loaded">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="MouseLeftButtonUp">
+                        <GalaSoft_MvvmLight_Command:EventToCommand Command="{Binding ChangeCurrentAccountCommand}" CommandParameter="{Binding}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+                
+                <Border.Background>
+                    <SolidColorBrush Color="{StaticResource AccentColor}" />
+                </Border.Background>
+
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="0.7" ScaleY="0.7" CenterX="100" CenterY="70" />
+                </Border.RenderTransform>
+
+                <Grid>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="{Binding Account.Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="UniformToFill" AlignmentY="Top" AlignmentX="Right" />
+                    </Grid.Background>
+
+                    <TextBlock HorizontalAlignment="Center" FontSize="22" Margin="5,0,5,0" FontFamily="{StaticResource HeaderFontFamily}" Text="{Binding Account.AccountName}" TextWrapping="Wrap" VerticalAlignment="Center">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush StartPoint="1,0">
+                                <GradientStop Color="#FFFFFF" Offset="0" />
+                                <GradientStop Color="#333333" Offset="3" />
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </navigation:Page.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock x:Name="AccountText" Grid.Row="0" Margin="10" FontSize="35" FontFamily="{StaticResource HeaderFontFamily}">
+            <TextBlock.Triggers>
+                <EventTrigger RoutedEvent="TextBlock.Loaded">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetName="AccountText" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5" />
+                            </Storyboard>                            
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </TextBlock.Triggers>    
+            accounts
+        </TextBlock>
+
+        <ScrollViewer Margin="10,-10,10,10" Grid.Row="1" BorderThickness="0" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <ItemsControl x:Name="AccountsList" ItemTemplate="{StaticResource AccountTemplate}"  ItemsSource="{Binding Path=Accounts}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <toolkit:WrapPanel />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </ItemsControl>
+                
+                <Grid HorizontalAlignment="Right">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" FontFamily="{StaticResource HeaderFontFamily}">
+                current account
+                    </TextBlock>
+
+                    <Border x:Name="CurrentAccountTile" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="0" Margin="0,5,10,10" Width="200" Height="140">
+                        <Border.Background>
+                            <SolidColorBrush Color="{StaticResource AccentColor}" />
+                        </Border.Background>
+
+                        <Border.RenderTransform>
+                            <ScaleTransform ScaleX="0.7" ScaleY="0.7" CenterX="100" CenterY="70" />
+                        </Border.RenderTransform>
+                        
+                        <Border.Triggers>
+                            <EventTrigger RoutedEvent="Border.Loaded">
+                                <EventTrigger.Actions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimation Storyboard.TargetName="CurrentAccountTile" Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.5" />
+                                            <DoubleAnimation Storyboard.TargetName="CurrentAccountTile" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)" From="0.7" To="1" Duration="0:0:0.2" />
+                                            <DoubleAnimation Storyboard.TargetName="CurrentAccountTile" Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)" From="0.7" To="1" Duration="0:0:0.2" />
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger.Actions>
+                            </EventTrigger>
+                        </Border.Triggers>
+                        
+                        <Grid>
+                            <Grid.Background>
+                                <ImageBrush ImageSource="{Binding CurrentAccount.Account.Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="UniformToFill" AlignmentY="Top" AlignmentX="Right" />
+                            </Grid.Background>
+
+                            <TextBlock HorizontalAlignment="Center" FontFamily="{StaticResource HeaderFontFamily}" FontSize="22" Text="{Binding CurrentAccount.Account.AccountName}" VerticalAlignment="Center" Margin="5,0,5,0" TextWrapping="Wrap">
+                                <TextBlock.Foreground>
+                                    <LinearGradientBrush StartPoint="1,0">
+                                        <GradientStop Color="#FFFFFF" Offset="0" />
+                                        <GradientStop Color="#333333" Offset="3" />
+                                    </LinearGradientBrush>
+                                </TextBlock.Foreground>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="1" Grid.Column="1" Width="245">
+                        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20" FontWeight="Bold">
+                    CREATE A NEW ACCOUNT
+                        </TextBlock>
+                        <TextBlock FontSize="12" Margin="0,5,0,0" Foreground="#666666" TextWrapping="Wrap">
+                    Create an additional account to connect another username to Battle.net.
+                        </TextBlock>
+                        <Button x:Name="CreateBtn" Margin="0,10,5,0" Width="110" HorizontalAlignment="Right" Click="Button_Click">New Account</Button>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

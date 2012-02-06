@@ -1,0 +1,54 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:glue="clr-namespace:Superiority.Views.SLGlue"
+             xmlns:viewmodels="clr-namespace:Superiority.ViewModels" 
+             xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+             xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+             x:Class="Superiority.App"
+             mc:Ignorable="PresentationOptions d">
+    <Application.Resources>
+        <ResourceDictionary>
+            <viewmodels:ViewModelLocator x:Key="ViewModelLocator" />
+
+            <SolidColorBrush x:Key="ChatTimeStampBrush" Color="#444444" />
+            <SolidColorBrush x:Key="ChatInProgressBrush" Color="#CC9900" />
+            <SolidColorBrush x:Key="ChatCompletedBrush" Color="#336633" />
+            <SolidColorBrush x:Key="ChatErrorBrush" Color="#993300" />
+            <SolidColorBrush x:Key="ChatJoinedChannelBrush" Color="#CC6600" />
+            <SolidColorBrush x:Key="ChatInfoBrush" Color="#666600" />
+            <SolidColorBrush x:Key="ChatWhisperUserBrush" Color="#669966" />
+            <SolidColorBrush x:Key="ChatWhisperMessageBrush" Color="#666666" />
+            <SolidColorBrush x:Key="ChatSpeakUserBrush" Color="#336666" />
+            <SolidColorBrush x:Key="ChatSpeakMessageBrush" Color="#333333" />
+            <SolidColorBrush x:Key="ChatSelfUserBrush" Color="#006666" />
+            <SolidColorBrush x:Key="ChatSelfMessageBrush" Color="#000000" />
+            <SolidColorBrush x:Key="ChatJoinLeaveBrush" Color="#003300" />
+
+            <BitmapImage x:Key="ScImage" UriSource="/Superiority;component/Assets/Icons/star.jpg" />
+            
+            <BitmapImage x:Key="BwImage" UriSource="/Superiority;component/Assets/Icons/sexp.jpg" />
+
+            <BitmapImage x:Key="D2Image" UriSource="/Superiority;component/Assets/Icons/d2dv.jpg" />
+            <BitmapImage x:Key="LodImage" UriSource="/Superiority;component/Assets/Icons/d2xp.jpg" />
+
+
+            <BitmapImage x:Key="W2Image" UriSource="/Superiority;component/Assets/Icons/w2bn.jpg" />
+
+
+            <BitmapImage x:Key="W3Image" UriSource="/Superiority;component/Assets/Icons/war3.jpg" />
+            <BitmapImage x:Key="TftImage" UriSource="/Superiority;component/Assets/Icons/w3xp.jpg" />
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Assets/Styles.xaml"/>
+                <ResourceDictionary Source="Assets/CoreStyles.xaml"/>
+                <ResourceDictionary Source="Assets/SDKStyles.xaml"/>
+                <ResourceDictionary Source="Assets/ToolkitStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

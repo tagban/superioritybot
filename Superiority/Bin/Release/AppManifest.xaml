@@ -1,0 +1,33 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Superiority" EntryPointType="Superiority.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="Superiority" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+      <OutOfBrowserSettings.Blurb>The next generation in Battle.net chat bots.</OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="Superiority.NET Beta 6" />
+      </OutOfBrowserSettings.WindowSettings>
+      <OutOfBrowserSettings.SecuritySettings>
+        <SecuritySettings ElevatedPermissions="Required" />
+      </OutOfBrowserSettings.SecuritySettings>
+      <OutOfBrowserSettings.Icons>
+        <Icon Size="16,16">Assets/Icons/Sun-icon_16x16.png</Icon>
+        <Icon Size="32,32">Assets/Icons/Sun-icon_32x32.png</Icon>
+        <Icon Size="48,48">Assets/Icons/Sun-icon_48x48.png</Icon>
+        <Icon Size="128,128">Assets/Icons/Sun-icon_128x128.png</Icon>
+      </OutOfBrowserSettings.Icons>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Superiority" Source="Superiority.dll" />
+    <AssemblyPart x:Name="GalaSoft.MvvmLight.Extras.SL4" Source="GalaSoft.MvvmLight.Extras.SL4.dll" />
+    <AssemblyPart x:Name="GalaSoft.MvvmLight.SL4" Source="GalaSoft.MvvmLight.SL4.dll" />
+    <AssemblyPart x:Name="Microsoft.CSharp" Source="Microsoft.CSharp.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input" Source="System.Windows.Controls.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Input.Toolkit" Source="System.Windows.Controls.Input.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Layout.Toolkit" Source="System.Windows.Controls.Layout.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit.Internals" Source="System.Windows.Controls.Toolkit.Internals.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+  </Deployment.Parts>
+</Deployment>
