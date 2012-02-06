@@ -1,0 +1,10 @@
+C:\Users\John\Desktop\superioritydotnet\Superiority.Web\bin\Superiority.Web.dll
+C:\Users\John\Desktop\superioritydotnet\Superiority.Web\bin\Superiority.Web.pdb
+C:\Users\John\Desktop\superioritydotnet\Superiority.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\John\Desktop\superioritydotnet\Superiority.Web\obj\Release\Superiority.Web.dll
+C:\Users\John\Desktop\superioritydotnet\Superiority.Web\obj\Release\Superiority.Web.pdb
+C:\Users\John\Desktop\SuperiorityBot\Superiority.Web\bin\Superiority.Web.dll
+C:\Users\John\Desktop\SuperiorityBot\Superiority.Web\bin\Superiority.Web.pdb
+C:\Users\John\Desktop\SuperiorityBot\Superiority.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\John\Desktop\SuperiorityBot\Superiority.Web\obj\Release\Superiority.Web.dll
+C:\Users\John\Desktop\SuperiorityBot\Superiority.Web\obj\Release\Superiority.Web.pdb

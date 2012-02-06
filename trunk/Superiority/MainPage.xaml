@@ -1,0 +1,45 @@
+<UserControl
+    x:Class="Superiority.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:toolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Layout.Toolkit"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+    d:DesignWidth="640" d:DesignHeight="300" CacheMode="BitmapCache" UseLayoutRounding="True">
+
+    <Grid x:Name="LayoutRoot">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+
+            <Border x:Name="LinksBorder" Background="{StaticResource HighlightBrush}" Grid.Row="1" Margin="0,0,5,5" Height="Auto">
+                <Border Background="White" Margin="20,0,0,0">
+                    <StackPanel x:Name="LinksStackPanel" Orientation="Horizontal" VerticalAlignment="Top" Background="White">
+
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Home" TargetName="ContentFrame" Content="accounts" Click="HyperlinkButton_Click" />
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChatScreen" TargetName="ContentFrame" Content="chat" />
+                   <!-- <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="FriendsPage" TargetName="ContentFrame" Content="friends" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ClanScreen" TargetName="ContentFrame" Content="clan" />
+                   --> <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SettingsScreen" TargetName="ContentFrame" Content="settings" />
+                </StackPanel>
+                </Border>
+			</Border>
+
+			<Border x:Name="ContentBorder" Grid.Row="3">
+                <navigation:Frame x:Name="ContentFrame" Style="{StaticResource NavContentFrameStyle}" Navigated="ContentFrame_Navigated" NavigationFailed="ContentFrame_NavigationFailed">
+                    <navigation:Frame.Template>
+                        <ControlTemplate TargetType="navigation:Frame">
+                            <Border>
+                                <ContentControl
+         Content="{TemplateBinding Content}"
+         HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+                            </Border>
+                        </ControlTemplate>
+                    </navigation:Frame.Template>
+                </navigation:Frame>
+        </Border>
+    </Grid>
+</UserControl>

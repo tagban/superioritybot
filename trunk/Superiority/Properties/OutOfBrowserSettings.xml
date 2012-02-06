@@ -1,0 +1,15 @@
+<OutOfBrowserSettings ShortName="Superiority" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>The next generation in Battle.net chat bots.</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="Superiority.NET Beta 6" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons>
+    <Icon Size="16,16">Assets/Icons/Sun-icon_16x16.png</Icon>
+    <Icon Size="32,32">Assets/Icons/Sun-icon_32x32.png</Icon>
+    <Icon Size="48,48">Assets/Icons/Sun-icon_48x48.png</Icon>
+    <Icon Size="128,128">Assets/Icons/Sun-icon_128x128.png</Icon>
+  </OutOfBrowserSettings.Icons>
+</OutOfBrowserSettings>

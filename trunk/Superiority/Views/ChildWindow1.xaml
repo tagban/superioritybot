@@ -1,0 +1,20 @@
+<sdk:ChildWindow x:Class="Superiority.Views.ChildWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	
+    Title="About Superiority.NET Beta4"
+    Width="400" Height="300"
+    Style="{StaticResource ChildWindowStyle}">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" MinHeight="45" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="CancelButton" Content="Close" Click="CancelButton_Click" Width="75" Height="30" HorizontalAlignment="Right" Grid.Row="1" />
+        <ScrollViewer>
+            <TextBlock Margin="8" TextWrapping="Wrap"><Span><Run Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum velit nibh, a tristique erat. Nam pretium hendrerit condimentum. Sed consequat magna non leo condimentum semper. Praesent tincidunt libero non ipsum bibendum dignissim dapibus augue pulvinar. Cras dictum, sapien sed egestas tincidunt, est ante blandit eros, sit amet facilisis sapien mi non mauris. Quisque porta arcu ut ante feugiat posuere."/></Span></TextBlock>
+        </ScrollViewer>
+    </Grid>
+</sdk:ChildWindow>

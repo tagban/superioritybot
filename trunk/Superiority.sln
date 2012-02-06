@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superiority", "Superiority\Superiority.csproj", "{B250560C-059B-45DB-8EFF-4A8CD2257C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Superiority.Web", "Superiority.Web\Superiority.Web.csproj", "{2E32255A-9C87-43A0-84C0-B459904365A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B250560C-059B-45DB-8EFF-4A8CD2257C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B250560C-059B-45DB-8EFF-4A8CD2257C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B250560C-059B-45DB-8EFF-4A8CD2257C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B250560C-059B-45DB-8EFF-4A8CD2257C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E32255A-9C87-43A0-84C0-B459904365A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E32255A-9C87-43A0-84C0-B459904365A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E32255A-9C87-43A0-84C0-B459904365A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E32255A-9C87-43A0-84C0-B459904365A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
