@@ -10,7 +10,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="21" />
+            <RowDefinition Height="179" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
@@ -22,7 +23,7 @@
             Currently hosted exclusively on BNET.cc
         </TextBlock>
         
-        <StackPanel Orientation="Horizontal" Height="180" Grid.Row="2" Margin="20,10,20,10">
+        <StackPanel Orientation="Horizontal" Height="180" Grid.Row="2" Margin="20,10" Grid.RowSpan="2" HorizontalAlignment="Center">
             <Border Width="280" Margin="1">
                 <Border.Background>
                     <ImageBrush ImageSource="/Superiority;component/Assets/Backgrounds/GPU.jpg" Stretch="UniformToFill" />
@@ -84,8 +85,8 @@
             </Border>
         </StackPanel>
 
-        <StackPanel Margin="20,0,20,20" Orientation="Horizontal" Grid.Row="3">
-            <Border Grid.Row="3" Height="38" Width="845" HorizontalAlignment="Left" VerticalAlignment="Top"  Padding="5">
+        <StackPanel Margin="20,0,20,20" Orientation="Horizontal" Grid.Row="4" HorizontalAlignment="Center">
+            <Border Grid.Row="3" Height="38" Width="845" HorizontalAlignment="center" VerticalAlignment="Top"  Padding="5">
                 <Border.Background>
                     <SolidColorBrush Color="{StaticResource AccentColor}" />
                 </Border.Background>
