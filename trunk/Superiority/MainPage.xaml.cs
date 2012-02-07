@@ -47,8 +47,8 @@ namespace Superiority
         private void ContentFrame_NavigationFailed(object sender, NavigationFailedEventArgs e)
         {
             e.Handled = true;
-            ChildWindow cw = new ClanInviteDialog();
-            cw.Show();
+            // ChildWindow cw = new errordialog();
+            //cw.Show();
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)

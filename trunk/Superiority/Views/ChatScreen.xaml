@@ -143,7 +143,7 @@
             </Paragraph>
         </RichTextBox>
       
-        <sdk:GridSplitter Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Opacity="0" Background="#666666" Grid.Row="1" Grid.RowSpan="2" />
+        <sdk:GridSplitter Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Opacity="0" Background="#000000" Grid.Row="1" Grid.RowSpan="2" />
 
         <ScrollViewer x:Name="UserList" Background="{x:Null}" Grid.Row="0" Margin="5,10,10,10" Grid.RowSpan="3" Grid.Column="3" HorizontalScrollBarVisibility="Disabled" BorderThickness="0">
             <ItemsControl ItemTemplate="{StaticResource UserListTemplate}" ItemsSource="{Binding Bnet.ChannelUsers}" Background="{x:Null}">

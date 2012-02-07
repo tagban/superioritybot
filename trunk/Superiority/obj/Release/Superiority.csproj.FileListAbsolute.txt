@@ -285,10 +285,10 @@ C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\ClanInviteDia
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\FriendsPage.g.i.cs
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\SettingsScreen.g.i.cs
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\ChatScreen.g.i.cs
-C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\ChildWindow1.g.i.cs
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\Home.g.i.cs
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\MainPage.g.i.cs
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Superiority.g.resources
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Superiority.dll
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Superiority.pdb
 C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\XapCacheFile.xml
+C:\Users\John\Desktop\SuperiorityBot\Superiority\obj\Release\Views\ChildWindow1.g.i.cs

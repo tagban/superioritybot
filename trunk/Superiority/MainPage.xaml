@@ -17,13 +17,14 @@
 
             <Border x:Name="LinksBorder" Background="{StaticResource HighlightBrush}" Grid.Row="1" Margin="0,0,5,5" Height="Auto">
                 <Border Background="White" Margin="20,0,0,0">
-                    <StackPanel x:Name="LinksStackPanel" Orientation="Horizontal" VerticalAlignment="Top" Background="White">
+                    <StackPanel x:Name="LinksStackPanel" Orientation="Horizontal" VerticalAlignment="Top" Background="white">
 
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Home" TargetName="ContentFrame" Content="accounts" Click="HyperlinkButton_Click" />
                         <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChatScreen" TargetName="ContentFrame" Content="chat" />
-                   <!-- <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="FriendsPage" TargetName="ContentFrame" Content="friends" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ClanScreen" TargetName="ContentFrame" Content="clan" />
-                   --> <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SettingsScreen" TargetName="ContentFrame" Content="settings" />
+                       <!-- <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="FriendsPage" TargetName="ContentFrame" Content="friends" />
+                        <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ClanScreen" TargetName="ContentFrame" Content="clan" /> -->
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChildWindow1" TargetName="ContentFrame" Content="about" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SettingsScreen" TargetName="ContentFrame" Content="settings" />
                 </StackPanel>
                 </Border>
 			</Border>
