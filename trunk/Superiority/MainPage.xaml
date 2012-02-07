@@ -23,8 +23,8 @@
                         <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChatScreen" TargetName="ContentFrame" Content="chat" />
                        <!-- <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="FriendsPage" TargetName="ContentFrame" Content="friends" />
                         <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ClanScreen" TargetName="ContentFrame" Content="clan" /> -->
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChildWindow1" TargetName="ContentFrame" Content="about" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SettingsScreen" TargetName="ContentFrame" Content="settings" />
+                    <!-- Disabled until can fix About! <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="ChildWindow1" TargetName="ContentFrame" Content="about" Click="HyperlinkButton_Click_1" /> -->
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SettingsScreen" TargetName="ContentFrame" Content="settings" Click="HyperlinkButton_Click" />
                 </StackPanel>
                 </Border>
 			</Border>

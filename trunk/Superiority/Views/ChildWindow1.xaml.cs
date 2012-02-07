@@ -28,6 +28,11 @@ namespace Superiority.Views
         {
             this.DialogResult = false;
         }
+
+        private void hyperlinkButton1_Click(object sender, RoutedEventArgs e)
+        {
+            this.DialogResult = false;
+        }
     }
 }
 

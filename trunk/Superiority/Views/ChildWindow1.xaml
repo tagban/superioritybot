@@ -16,6 +16,6 @@
         <ScrollViewer>
             <TextBlock Margin="8" TextWrapping="Wrap"><Span><Run Text="Currently, this project was started and created by Warrior.x86. He recently stopped working on it. Its open source but he wanted Tagban of BNET.cc to take it over. I plan to keep working on it very hard, but it is a learning experience. Expect delays and lots of bugs! That being said, please let me know if you find an issue via the Google Code website below, or via BNET.cc"/></Span></TextBlock>
         </ScrollViewer>
-        <HyperlinkButton Content="Google Code" Grid.Row="1" Height="19" HorizontalAlignment="Left" Margin="25,13,0,0" Name="hyperlinkButton1" VerticalAlignment="Top" Width="87" NavigateUri="http://code.google.com/p/superioritybot" />
+        <HyperlinkButton Content="Google Code" Grid.Row="1" Height="19" HorizontalAlignment="Left" Margin="25,13,0,0" Name="hyperlinkButton1" VerticalAlignment="Top" Width="87" Click="hyperlinkButton1_Click" />
     </Grid>
 </sdk:ChildWindow>
