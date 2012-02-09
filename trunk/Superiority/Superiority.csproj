@@ -86,7 +86,6 @@
       <HintPath>..\..\..\..\..\..\Desktop\GalaSoft.MvvmLight.Binaries.V3\Program Files\Laurent Bugnion (GalaSoft)\Mvvm Light Toolkit\Binaries\Silverlight4\GalaSoft.MvvmLight.SL4.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Microsoft.Expression.Interactions" />
     <Reference Include="mscorlib" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Windows" />
@@ -282,6 +281,10 @@
     <Resource Include="Assets\Backgrounds\osx.jpg" />
     <Resource Include="Assets\Backgrounds\GPU.jpg" />
     <Resource Include="Assets\Backgrounds\sl.jpg" />
+    <Resource Include="Assets\Icons\star.png" />
+    <Resource Include="Assets\Icons\d2dv.png" />
+    <Resource Include="Assets\Icons\d2xp.png" />
+    <Resource Include="Assets\Icons\sexp.png" />
     <Content Include="Assets\Icons\Sun-icon_128x128.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -294,6 +297,11 @@
     <Content Include="Assets\Icons\Sun-icon_48x48.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Assets\Icons\test.jpg" />
+    <Resource Include="Assets\Icons\test.png" />
+    <Resource Include="Assets\Icons\w2bn.png" />
+    <Resource Include="Assets\Icons\w3xp.png" />
+    <Resource Include="Assets\Icons\war3.png" />
     <Content Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>

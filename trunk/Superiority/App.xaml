@@ -29,19 +29,19 @@
             <SolidColorBrush x:Key="ChatSelfMessageBrush" Color="#000000" />
             <SolidColorBrush x:Key="ChatJoinLeaveBrush" Color="#003300" />
 
-            <BitmapImage x:Key="ScImage" UriSource="/Superiority;component/Assets/Icons/star.jpg" />
+            <BitmapImage x:Key="ScImage" UriSource="/Superiority;component/Assets/Icons/star.png" />
             
-            <BitmapImage x:Key="BwImage" UriSource="/Superiority;component/Assets/Icons/sexp.jpg" />
+            <BitmapImage x:Key="BwImage" UriSource="/Superiority;component/Assets/Icons/sexp.png" />
 
-            <BitmapImage x:Key="D2Image" UriSource="/Superiority;component/Assets/Icons/d2dv.jpg" />
-            <BitmapImage x:Key="LodImage" UriSource="/Superiority;component/Assets/Icons/d2xp.jpg" />
-
-
-            <BitmapImage x:Key="W2Image" UriSource="/Superiority;component/Assets/Icons/w2bn.jpg" />
+            <BitmapImage x:Key="D2Image" UriSource="/Superiority;component/Assets/Icons/d2dv.png" />
+            <BitmapImage x:Key="LodImage" UriSource="/Superiority;component/Assets/Icons/d2xp.png" />
 
 
-            <BitmapImage x:Key="W3Image" UriSource="/Superiority;component/Assets/Icons/war3.jpg" />
-            <BitmapImage x:Key="TftImage" UriSource="/Superiority;component/Assets/Icons/w3xp.jpg" />
+            <BitmapImage x:Key="W2Image" UriSource="/Superiority;component/Assets/Icons/w2bn.png" />
+
+
+            <BitmapImage x:Key="W3Image" UriSource="/Superiority;component/Assets/Icons/war3.png" />
+            <BitmapImage x:Key="TftImage" UriSource="/Superiority;component/Assets/Icons/w3xp.png" />
             
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Assets/Styles.xaml"/>

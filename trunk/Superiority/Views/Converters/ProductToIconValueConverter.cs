@@ -26,19 +26,19 @@ namespace Superiority.Views.SLGlue
             switch (p)
             {
                 case BnetProduct.Starcraft:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/star.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/star.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.BroodWar:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/sexp.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/sexp.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.Warcraft2:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/w2bn.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/w2bn.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.Diablo2:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/d2dv.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/d2dv.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.LordOfDest:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/d2xp.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/d2xp.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.Warcraft3:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/war3.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/war3.png", UriKind.RelativeOrAbsolute));
                 case BnetProduct.FrozenThrone:
-                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/w3xp.jpg", UriKind.RelativeOrAbsolute));
+                    return new BitmapImage(new Uri("/Superiority;component/Assets/Icons/w3xp.png", UriKind.RelativeOrAbsolute));
                 default:
                     return null;
             }
