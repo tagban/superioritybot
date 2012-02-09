@@ -36,36 +36,30 @@
         </DataTemplate>
 
         <DataTemplate x:Key="UserListDetailedTemplate">
-            <Border Loaded="Border_Loaded" Margin="0.2" Opacity="0" Width="120" Height="80">
-                <Border.Background>
-                    <SolidColorBrush Color="{StaticResource AccentColor}" />
-                </Border.Background>
-
+            <Border Loaded="Border_Loaded" Margin="0.2" Opacity="0" Width="120" Height="25">
+  
                 <Border.RenderTransform>
-                    <ScaleTransform ScaleX="0.7" ScaleY="0.7" CenterX="60" CenterY="40" />
+                    <ScaleTransform ScaleX="0.7" ScaleY="0.7" CenterX="60" CenterY="10" />
                 </Border.RenderTransform>
 
                 <Grid>
                     <Grid.Background>
-                        <ImageBrush ImageSource="{Binding Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="UniformToFill" AlignmentY="Top" AlignmentX="Right" />
+                        <ImageBrush ImageSource="{Binding Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="None" AlignmentY="Top" AlignmentX="Left" />
                     </Grid.Background>
 
                     <Border HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Border.Background>
-                            <SolidColorBrush Color="#666666" Opacity="0.6" />
+                            <!-- <SolidColorBrush Color="#FFFFFF" Opacity="0.6" /> -->
                         </Border.Background>
 
-                        <TextBlock FontSize="16" TextOptions.TextHintingMode="Animated" FontFamily="{StaticResource HeaderFontFamily}" Margin="2" Text="{Binding DisplayName}" TextWrapping="Wrap" Foreground="White" />
+                        <TextBlock FontSize="15" TextOptions.TextHintingMode="Animated" FontFamily="{StaticResource HeaderFontFamily}" Margin="2" Text="{Binding DisplayName}" TextWrapping="Wrap" Foreground="White" />
                     </Border>
                 </Grid>
             </Border>
         </DataTemplate>
 
         <DataTemplate x:Key="UserListSimpleTemplate">
-            <Border Loaded="Border_Loaded" Height="25" Width="235" Margin="0.2" Opacity="0">
-                <Border.Background>
-                    <SolidColorBrush Color="{StaticResource AccentColor}" />
-                </Border.Background>
+            <Border Loaded="Border_Loaded" Height="20" Width="160" Margin="0.2" Opacity="0">
 
                 <Border.RenderTransform>
                     <ScaleTransform ScaleX="0.7" ScaleY="0.7" CenterX="117.5" CenterY="12.5" />
@@ -73,15 +67,15 @@
 
                 <Grid>
                     <Grid.Background>
-                        <ImageBrush ImageSource="{Binding Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="UniformToFill"  AlignmentY="Center"  AlignmentX="Right" />
+                        <ImageBrush ImageSource="{Binding Product, Converter={StaticResource ProductToIconValueConverter}}" Stretch="None"  AlignmentY="Center"  AlignmentX="Left" />
                     </Grid.Background>
 
                     <Border HorizontalAlignment="Left" VerticalAlignment="Center">
                         <Border.Background>
-                            <SolidColorBrush Color="#666666" Opacity="0.6" />
+                           <!-- <SolidColorBrush Color="#FFFFFF" Opacity="0.6" /> -->
                         </Border.Background>
 
-                        <TextBlock FontSize="16" TextOptions.TextHintingMode="Animated" FontFamily="{StaticResource HeaderFontFamily}" Margin="2" Text="{Binding DisplayName}" TextWrapping="Wrap" Foreground="White" />
+                        <TextBlock FontSize="14" TextOptions.TextHintingMode="Animated" FontFamily="{StaticResource HeaderFontFamily}" Margin="32,1,1,1" Text="{Binding DisplayName}" TextWrapping="Wrap" Foreground="Black" FontWeight="Black"/>
                     </Border>
                 </Grid>
             </Border>
@@ -102,16 +96,17 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="285" MinWidth="275" />
+            <ColumnDefinition Width="452*" />
+            <ColumnDefinition Width="0" />
+            <ColumnDefinition Width="0" />
+            <ColumnDefinition Width="188" />
         </Grid.ColumnDefinitions>
 
         <Grid.Background>
             <ImageBrush Stretch="UniformToFill" ImageSource="{Binding Account.Product, Converter={StaticResource ProductToBgValueConverter}}" Opacity="0.15" />
         </Grid.Background>
 
-        <TextBlock x:Name="ChatText" Text="{Binding Bnet.ChattingStatus}" Opacity="0" Grid.Row="0" Margin="10" FontSize="35" FontFamily="{StaticResource HeaderFontFamily}">
+        <TextBlock x:Name="ChatText" Text="{Binding Bnet.ChattingStatus}" Opacity="0" Margin="10,10,97,10" FontSize="35" FontFamily="{StaticResource HeaderFontFamily}">
             <TextBlock.Triggers>
                 <EventTrigger RoutedEvent="TextBlock.Loaded">
                     <EventTrigger.Actions>
@@ -125,7 +120,7 @@
             </TextBlock.Triggers>
         </TextBlock>
             
-        <RichTextBox x:Name="ChatBox" Grid.Row="1" Grid.Column="0" Opacity="0" TextOptions.TextHintingMode="Animated" BorderThickness="0" Margin="10,-10,10,10" FontSize="15"  Background="Transparent" IsReadOnly="True" FontFamily="/Superiority;component/Assets/Fonts/ZegoeUI-U.ttf#Zegoe UI - U">
+        <RichTextBox x:Name="ChatBox" Grid.Row="1" Opacity="0" TextOptions.TextHintingMode="Animated" BorderThickness="0" Margin="10,-10,6,10" FontSize="15"  Background="Transparent" IsReadOnly="True" FontFamily="/Superiority;component/Assets/Fonts/ZegoeUI-U.ttf#Zegoe UI - U" Grid.RowSpan="2">
             <RichTextBox.Triggers>
                 <EventTrigger RoutedEvent="TextBlock.Loaded">
                     <EventTrigger.Actions>
@@ -143,10 +138,10 @@
             </Paragraph>
         </RichTextBox>
       
-        <sdk:GridSplitter Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Opacity="0" Background="#000000" Grid.Row="1" Grid.RowSpan="2" />
+        <sdk:GridSplitter Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Center" Width="5" Opacity="0" Background="#000000" Grid.Row="1" Grid.RowSpan="2" Margin="0,0,183,0" />
 
-        <ScrollViewer x:Name="UserList" Background="{x:Null}" Grid.Row="0" Margin="5,10,10,10" Grid.RowSpan="3" Grid.Column="3" HorizontalScrollBarVisibility="Disabled" BorderThickness="0">
-            <ItemsControl ItemTemplate="{StaticResource UserListTemplate}" ItemsSource="{Binding Bnet.ChannelUsers}" Background="{x:Null}">
+        <ScrollViewer x:Name="UserList" Background="{x:Null}" Margin="0,10,10,10" Grid.RowSpan="3" Grid.Column="3" HorizontalScrollBarVisibility="Disabled" BorderThickness="0">
+            <ItemsControl ItemTemplate="{StaticResource UserListTemplate}" ItemsSource="{Binding Bnet.ChannelUsers}" Background="{x:Null}" Width="164">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
                         <toolkit:WrapPanel />
@@ -155,7 +150,7 @@
             </ItemsControl>
         </ScrollViewer>
 
-        <sdk:AutoCompleteBox x:Name="SendBox" ItemTemplate="{StaticResource AutoCompleteTemplate}" IsTextCompletionEnabled="True" Grid.Row="2" Margin="10,5,10,10">
+        <sdk:AutoCompleteBox x:Name="SendBox" ItemTemplate="{StaticResource AutoCompleteTemplate}" IsTextCompletionEnabled="True" Grid.Row="2" Margin="10,5,6,10">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="KeyUp">
                     <GalaSoft_MvvmLight_Command:EventToCommand PassEventArgsToCommand="True" Command="{Binding Bnet.SendMessageCommand}" />
