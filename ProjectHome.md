@@ -1,0 +1,2 @@
+This bot was written as a universal option as opposed to other chat bots out there for Battle.net 1.0. The original author passed the code/bot onto me as a learning tool for me to learn while I release it. The bot is and always will be open source. I welcome contributors, but understand the hesitance. Enjoy!
+**Download here:** http://www.bnet.cc/superiority/
